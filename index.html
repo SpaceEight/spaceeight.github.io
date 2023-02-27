@@ -10,7 +10,69 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+    <div class="layout" data-form="window">
+        <div class="form">
+            <div class="form__close">
+                <img src="icons/close.svg" alt="close__button" data-form="close">
+            </div>
+
+            <div class="form__nav">
+                <div class="form__nav_btn form__nav_btn-active" data-form="reg">Впервые здесь</div>
+                <div class="form__nav_btn" data-form="log">Уже есть аккаунт</div>
+            </div>
+
+            <div class="form__content" data-form="regWindow">
+                <div class="form__headline">Оформление подписки</div>
+
+                <div class="form__forma">
+                    <form action="">
+                        <input type="text" name="email-reg" class="form__input">
+                        <input type="text" name="name-reg" class="form__input">
+                        <div class="form__check">
+                            <div class="form__checkbox">
+                                <input type="checkbox" name="policy-reg">
+                            </div>
+
+                            <div class="form__conditions">
+                                Я согласен с условиями <a href="#"><span>Пользовательского соглашения</span></a> и <a href="#"><span>Политики конфиденциальности</span></a>
+                            </div>
+                        </div>
+
+                        <div class="form__check">
+                            <div class="form__checkbox">
+                                <input type="checkbox" name="mailing-reg">
+                            </div>
+
+                            <div class="form__conditions">
+                                Я хочу подписаться на рекламную рассылку
+                            </div>
+                        </div>
+                        <input type="submit" value="Зарегистрироваться" class="form__button">
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="form__content form__content-pass" data-form="logWindow">
+                <div class="form__headline">Вход</div>
     
+                <div class="form__forma">
+                    <form action="">
+                        <input type="text" name="email-log" class="form__input">
+                        <input type="text" name="password-log" class="form__input">
+                        
+                        
+                        <input type="submit" value="Войти" class="form__button">
+                    </form>
+
+                    <div class="form__forget">
+                        Забыли пароль? <a href="#"><span>Восстановить</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
