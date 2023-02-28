@@ -13,12 +13,12 @@
     <div class="layout" data-form="window">
         <div class="form">
             <div class="form__close">
-                <img src="icons/close.svg" alt="close__button" data-form="close">
+                <div class="form__close_btn"></div>
             </div>
 
             <div class="form__nav">
-                <div class="form__nav_btn form__nav_btn-active" data-form="reg">Впервые здесь</div>
-                <div class="form__nav_btn" data-form="log">Уже есть аккаунт</div>
+                <div class="form__nav_btn form__nav_btn-active" data-form="reg">Регистрация</div>
+                <div class="form__nav_btn" data-form="log">Вход</div>
             </div>
 
             <div class="form__content" data-form="regWindow">
@@ -26,8 +26,8 @@
 
                 <div class="form__forma">
                     <form action="">
-                        <input type="text" name="email-reg" class="form__input">
-                        <input type="text" name="name-reg" class="form__input">
+                        <input type="text" placeholder="Ваш E-Mail" name="email-reg" class="form__input">
+                        <input type="text" placeholder="Ваше имя" name="name-reg" class="form__input">
                         <div class="form__check">
                             <div class="form__checkbox">
                                 <input type="checkbox" name="policy-reg">
@@ -58,8 +58,8 @@
     
                 <div class="form__forma">
                     <form action="">
-                        <input type="text" name="email-log" class="form__input">
-                        <input type="text" name="password-log" class="form__input">
+                        <input type="text" placeholder="E-Mail" name="email-log" class="form__input">
+                        <input type="text" placeholder="Пароль" name="password-log" class="form__input">
                         
                         
                         <input type="submit" value="Войти" class="form__button">
